@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-fredoka: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
+
+* { box-sizing: border-box; }
+
+::selection { background: rgba(249,115,22,.35); }
+
+.halftone {
+  background-image:
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,.12) 0 1px, transparent 1px 6px),
+    radial-gradient(circle at 75% 70%, rgba(255,255,255,.10) 0 1px, transparent 1px 7px);
+  background-size: 12px 12px, 14px 14px;
+  mix-blend-mode: overlay;
+  opacity: 0.62;
+  filter: contrast(115%) saturate(120%);
+}
+
+/* default comic border */
+.white-border { border: 4px solid rgba(255,255,255,.95); z-index: 0;}
+
+/* thicker outermost */
+.white-border-thick { border: 6px solid rgba(255,255,255,.98); }
+
+.soft-pop { box-shadow: 0 18px 54px rgba(0,0,0,0.26);   z-index: 0; }
+
+html, body { font-family: var(--font-fredoka), system-ui, sans-serif; }
+
+/* white outline for brown text */
+.outline-white {
+  text-shadow:
+    /* inner ring */
+    1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px -1px 0 #fff,
+
+    /* middle ring */
+    2px 2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px -2px 0 #fff,
+
+    /* outer ring (thick comic stroke) */
+    3px 3px 0 #fff,
+    -3px 3px 0 #fff,
+    3px -3px 0 #fff,
+    -3px -3px 0 #fff;
+}
+
+/* halftone overlay for buttons */
+.btn-halftone {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Disable halftone dots specifically for the Start button */
+.btn-start::before,
+.btn-start::after {
+  display: none !important;
+}
+
+/* Slightly thinner border for START button */
+.btn-start.white-border {
+  border-width: 3px;
+}
+
+/* Thinner outline for the START label only */
+.outline-white-thin {
+  text-shadow:
+    2px 2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px -2px 0 #fff;
+}
+
+/* Thinner outline for the START label only */
+.outline-white-extrathin {
+  text-shadow:
+    1px 1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px -1px 0 #fff;
+}

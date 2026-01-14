@@ -1,0 +1,94 @@
+# =========================
+# Node / Next.js
+# =========================
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# =========================
+# Env files
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# OS / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# IDEs
+# =========================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Coverage / Tests
+# =========================
+coverage/
+.nyc_output/
+
+# =========================
+# Cache / temp
+# =========================
+.cache/
+.tmp/
+.temp/
+
+# =========================
+# Media build artifacts
+# =========================
+*.mp3
+*.wav
+*.ogg
+*.aac
+*.flac
+
+# Keep raw videos OUT of git (served via route)
+content/video/*
+!content/video/.gitkeep
+
+# =========================
+# Generated content
+# =========================
+.velite/
+content/.generated/
+content/.cache/
+
+# =========================
+# Analytics / profiling
+# =========================
+.next-analyze/
+.profile.json
+
+# =========================
+# Vercel
+# =========================
+.vercel/
+
+# =========================
+# Misc
+# =========================
+*.log
