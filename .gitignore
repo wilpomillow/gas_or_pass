@@ -67,7 +67,6 @@ coverage/
 *.flac
 
 # Keep raw videos OUT of git (served via route)
-content/video/*
 !content/video/.gitkeep
 
 # =========================
