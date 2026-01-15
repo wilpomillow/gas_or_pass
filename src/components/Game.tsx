@@ -205,7 +205,10 @@ export default function Game({ cards }: Props) {
           </motion.div>
 
           <div className="mt-4 text-lg md:text-xl font-semibold text-white/85">
-            AFTER YOU PICK, WE REVEAL THE CLIP.
+            AFTER YOU PICK, WE REVEAL THE CLIP
+          </div>
+            <div className="mt-1 text-sm md:text-base font-normal text-white/60">
+            BY WILPO MILLOW
           </div>
         </motion.div>
       </div>

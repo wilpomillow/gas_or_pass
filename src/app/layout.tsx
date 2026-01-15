@@ -10,7 +10,7 @@ const fredoka = Fredoka({
 
 export const metadata: Metadata = {
   title: "Gas or Pass",
-  description: "Swipe, listen, guess.",
+  description: "Game by Wilpo Millow",
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
