@@ -7,7 +7,7 @@ export type CardMeta = {
 
   videoSrc?: string | null;
 
-  // NEW: segment timestamps (seconds)
+  // segment timestamps (seconds)
   start?: number | null;
   end?: number | null;
 
@@ -18,3 +18,14 @@ export type CardMeta = {
 export type Card = CardMeta & {
   mdxFile: string;
 };
+
+// NEW: Interstitial card + mixed deck item type
+export type InterstitialCard = {
+  kind: "interstitial";
+  id: string;
+  title: string;
+  href: string;
+  imageSrc: string;
+};
+
+export type DeckItem = Card | InterstitialCard;
